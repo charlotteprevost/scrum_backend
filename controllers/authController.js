@@ -118,9 +118,9 @@ router.post('/login', async(req, res, next) => {
 			console.log(`-------------------- User Entry --------------------\n`, req.session);
 
 	    } else {
-			console.log(`-------------------- User --------------------\n`, user);
-			console.log(`-------------------- User Entry --------------------\n`, req.body);
-	    console.log(`Invalid Username/Password`);
+				console.log(`-------------------- User --------------------\n`, user);
+				console.log(`-------------------- User Entry --------------------\n`, req.body);
+				console.log(`Invalid Username/Password`);
 
 		    res.json({
 		      status: 400,
